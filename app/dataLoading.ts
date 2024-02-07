@@ -3,7 +3,7 @@ import { Frame, Scene } from './types';
 import fs from 'fs';
 import path from 'path';
 
-const baseDirectory = '../output/computer-think-1';
+const baseDirectory = '/public/computer-think-1';
 
 export async function dataLoadingFunction() {
     const items = fs.readdirSync(baseDirectory, { withFileTypes: true });
