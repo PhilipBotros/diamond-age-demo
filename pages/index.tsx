@@ -75,7 +75,7 @@ export default function Home({ scenesFromProps }) {
             className={`scene ${i === currentSceneIndex ? "current" : "hidden"}`}
             key={`scene-${i}`}
           >
-            <audio ref={audioRef} src={scene.audio} controls autoPlay />
+            <audio ref={audioRef} src={scene.audio} controls />
             <div className="flex flex-row justify-center"> {/* Center the frames */}
               {scene.frames.map((frame, j) => (
                 <div className="frame m-2" key={`frame-${i}-${j}`}> {/* Margin for spacing between frames */}
